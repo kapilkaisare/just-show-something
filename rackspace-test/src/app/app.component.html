@@ -1,40 +1,40 @@
-<div class='container'>
-  <table>
+<div class="table-responsive">
+  <table class="table table-hover">
     <tr>
       <th>
         <span>User Id</span>
         <i 
-          class="fa fa-arrow-up" aria-hidden="true" 
+          class="fa fa-arrow-up clickable" aria-hidden="true" 
           (click)="handleUserIdClickedUp($event)"></i>
         <i 
-          class="fa fa-arrow-down" aria-hidden="true" 
+          class="fa fa-arrow-down clickable" aria-hidden="true" 
           (click)="handleUserIdClickedDown($event)"></i>
       </th>
       <th>
         <span>Id</span>
         <i 
-          class="fa fa-arrow-up" aria-hidden="true" 
+          class="fa fa-arrow-up clickable" aria-hidden="true" 
           (click)="handleIdClickedUp($event)"></i>
         <i 
-          class="fa fa-arrow-down" aria-hidden="true" 
+          class="fa fa-arrow-down clickable" aria-hidden="true" 
           (click)="handleIdClickedDown($event)"></i>
       </th>
       <th>
         <span>Title</span>
         <i 
-          class="fa fa-arrow-up" aria-hidden="true" 
+          class="fa fa-arrow-up clickable" aria-hidden="true" 
           (click)="handleTitleClickedUp($event)"></i>
         <i 
-          class="fa fa-arrow-down" aria-hidden="true" 
+          class="fa fa-arrow-down clickable" aria-hidden="true" 
           (click)="handleTitleClickedDown($event)"></i>
         </th>
-      <th>
+      <th class="body-col">
         <span>Body</span>
         <i 
-          class="fa fa-arrow-up" aria-hidden="true" 
+          class="fa fa-arrow-up clickable" aria-hidden="true" 
           (click)="handleBodyClickedUp($event)"></i> 
         <i 
-          class="fa fa-arrow-down" aria-hidden="true" 
+          class="fa fa-arrow-down clickable" aria-hidden="true" 
           (click)="handleBodyClickedDown($event)"></i>      
       </th>
     </tr>
@@ -42,7 +42,7 @@
       <td>{{ post.userId }}</td>
       <td>{{ post.id }}</td>
       <td>{{ post.title }}</td>
-      <td>{{ post.body }}</td>      
+      <td class="body-col">{{ post.body }}</td>      
     </tr>
   </table>
 </div>
