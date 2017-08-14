@@ -1,0 +1,49 @@
+<div class='container'>
+  <table>
+    <tr>
+      <th>
+        <span>User Id</span>
+        <i 
+          class="fa fa-arrow-up" aria-hidden="true" 
+          (click)="handleUserIdClickedUp($event)"></i>
+        <i 
+          class="fa fa-arrow-down" aria-hidden="true" 
+          (click)="handleUserIdClickedDown($event)"></i>
+      </th>
+      <th>
+        <span>Id</span>
+        <i 
+          class="fa fa-arrow-up" aria-hidden="true" 
+          (click)="handleIdClickedUp($event)"></i>
+        <i 
+          class="fa fa-arrow-down" aria-hidden="true" 
+          (click)="handleIdClickedDown($event)"></i>
+      </th>
+      <th>
+        <span>Title</span>
+        <i 
+          class="fa fa-arrow-up" aria-hidden="true" 
+          (click)="handleTitleClickedUp($event)"></i>
+        <i 
+          class="fa fa-arrow-down" aria-hidden="true" 
+          (click)="handleTitleClickedDown($event)"></i>
+        </th>
+      <th>
+        <span>Body</span>
+        <i 
+          class="fa fa-arrow-up" aria-hidden="true" 
+          (click)="handleBodyClickedUp($event)"></i> 
+        <i 
+          class="fa fa-arrow-down" aria-hidden="true" 
+          (click)="handleBodyClickedDown($event)"></i>      
+      </th>
+    </tr>
+    <tr *ngFor="let post of posts">
+      <td>{{ post.userId }}</td>
+      <td>{{ post.id }}</td>
+      <td>{{ post.title }}</td>
+      <td>{{ post.body }}</td>      
+    </tr>
+  </table>
+</div>
+
